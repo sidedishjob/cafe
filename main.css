@@ -13,13 +13,17 @@ body {
     background-repeat: no-repeat;
     height: 600px;
     display: none;
-}
-
-.page {
     font-family: 'Hannotate TC',sans-serif;
     color: #868585; 
     text-align:center;
 }
+
+/* 不要divタグ削除 */
+/* .page {
+    font-family: 'Hannotate TC',sans-serif;
+    color: #868585; 
+    text-align:center;
+} */
 
 a {
     color: #868585;
@@ -39,10 +43,11 @@ a::after {
     transform: scale(0, 1);
     transform-origin: left top;
     transition: transform .3s;
-  }
-  a:hover::after {
+}
+
+a:hover::after {
     transform: scale(1, 1);
-  }
+}
 
 .name {
     font-size: 100px;
@@ -52,22 +57,12 @@ a::after {
 .serect {
     font-size: 70px;
     display:flex;
-  flex-flow: column;
+    flex-flow: column;
 }
 
-.home {
-    padding-top: 50px;
-}
-
-.about {
-    padding-top: 50px;
-}
-
-.menu {
-    padding-top: 50px;
-}
-
-.store {
+/* margin: 0 auto; 追加 */
+.serect a {
+    margin: 0 auto;
     padding-top: 50px;
 }
 
